@@ -1,0 +1,40 @@
+{
+  "schema": "ubic/agent-card/v1",
+  "name": "MedXpert 器械注册助手",
+  "description": "Medical device registration assistant (read-only MCP). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.",
+  "protocol": "MCP",
+  "provider": {
+    "organization": "MedXpert",
+    "url": "https://medxpert.cn"
+  },
+  "author": "MedXpert (org) · operated by SynomosAI governance line",
+  "capabilities": [
+    "medical device registration assistant",
+    "regulatory tool",
+    "documentation helper",
+    "注册助手",
+    "文档辅助"
+  ],
+  "keywords": [
+    "medical device registration assistant",
+    "regulatory tool",
+    "documentation helper",
+    "注册助手",
+    "文档辅助"
+  ],
+  "auth": {
+    "mode": "none",
+    "note": "read-only, no credentials required"
+  },
+  "transport": {
+    "type": "stdio",
+    "command": "python",
+    "args": [
+      "server.py"
+    ]
+  },
+  "homepage": "https://medxpert.cn",
+  "license": "MIT",
+  "installByConsent": "AI may request install; human approves (A3 Law II)",
+  "scope": "regulatory knowledge query — not legal/clinical advice"
+}
