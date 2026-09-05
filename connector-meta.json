@@ -1,0 +1,28 @@
+{
+  "schema": "workbuddy-connector/v1",
+  "name": "MedXpert 器械注册助手",
+  "version": "1.0.0",
+  "description": "Medical device registration assistant (read-only MCP). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.",
+  "author": "MedXpert (org)",
+  "type": "mcp-server",
+  "auth": {
+    "mode": "none"
+  },
+  "transport": {
+    "type": "stdio",
+    "command": "python",
+    "args": [
+      "server.py"
+    ]
+  },
+  "icon": "icon.png",
+  "examples_zh": [
+    "帮我查某份 IFU 是否符合 MDR 标签要求",
+    "生成一份注册申报材料完整度自评表"
+  ],
+  "examples_en": [
+    "Check if an IFU meets MDR labeling requirements",
+    "Generate a submission completeness self-check"
+  ],
+  "note": "Read-only MCP server; MedXpert governance line"
+}
