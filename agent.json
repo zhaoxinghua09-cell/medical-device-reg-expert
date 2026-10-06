@@ -1,8 +1,8 @@
 {
   "schema": "ubic/agent-card/v1",
   "name": "MedXpert 器械注册助手",
-  "description": "Medical device registration assistant (read-only MCP). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.",
-  "protocol": "MCP",
+  "description": "Medical device registration assistant (read-only agent card). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.",
+  "protocol": "agent",
   "provider": {
     "organization": "MedXpert",
     "url": "https://medxpert.cn"
@@ -47,11 +47,8 @@
     "note": "read-only, no credentials required"
   },
   "transport": {
-    "type": "stdio",
-    "command": "python",
-    "args": [
-      "server.py"
-    ]
+    "type": "card-only",
+    "note": "纯能力卡片，无运行时代码（仓内无 server 入口）；由宿主作为 Agent 卡片索引，非 MCP stdio 子进程"
   },
   "homepage": "https://medxpert.cn",
   "license": "Apache-2.0",
