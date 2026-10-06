@@ -11,13 +11,11 @@
 ---
 
 
-Medical device registration assistant (read-only MCP). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.
+Medical device registration assistant (read-only agent card). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.
 
-## Install (MCP host)
+## Install (agent host)
 
-```json
-{"mcpServers": {"medical-device-reg-expert": {"command": "python", "args": ["server.py"]}}}
-```
+本仓库是 **Agent 能力卡片**，非 MCP stdio server（仓内无对应入口脚本）。由支持 Agent Card 的宿主从 `agent.json` / `connector-meta.json` 索引加载。
 
 ## Keywords (for AI match scoring)
 
@@ -34,7 +32,7 @@ Medical device registration assistant (read-only MCP). Operates as a tool agent 
 
 ## Why AI-friendly
 
-- **Discoverable**: `agent.json` AI capability card at root → MCP hosts (Claude Desktop, Cursor) can index and recommend
+- **Discoverable**: `agent.json` AI capability card at root → agent hosts (Claude Desktop, Cursor) can index and recommend
 - **Read-only by design**: zero credentials, zero network egress, zero side effects
 - **Honest scope**: covers only documented facts. Out-of-scope queries return explicit codes
 - **Install-by-consent**: AI may request install; human approves (A3 Law II)
