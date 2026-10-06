@@ -2,18 +2,16 @@
   "schema": "workbuddy-connector/v1",
   "name": "MedXpert 器械注册助手",
   "version": "1.0.0",
-  "description": "Medical device registration assistant (read-only MCP). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.",
+  "description": "Medical device registration assistant (read-only agent card). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.",
   "author": "赵兴华 / Steven Zhao·China（ORCID 0009-0001-0512-1237）",
-  "type": "mcp-server",
+  "license": "Apache-2.0",
+  "type": "agent",
   "auth": {
     "mode": "none"
   },
   "transport": {
-    "type": "stdio",
-    "command": "python",
-    "args": [
-      "server.py"
-    ]
+    "type": "card-only",
+    "note": "纯能力卡片，无运行时代码；由宿主作为 Agent 卡片索引，非 MCP stdio 子进程"
   },
   "icon": "icon.png",
   "examples_zh": [
@@ -24,5 +22,5 @@
     "Check if an IFU meets MDR labeling requirements",
     "Generate a submission completeness self-check"
   ],
-  "note": "Read-only MCP server; MedXpert governance line"
+  "note": "Read-only agent card; MedXpert governance line"
 }
