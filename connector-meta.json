@@ -3,7 +3,7 @@
   "name": "MedXpert 器械注册助手",
   "version": "1.0.0",
   "description": "Medical device registration assistant (read-only MCP). Operates as a tool agent — does NOT provide medical advice or clinical judgment. For documentation query, regulatory path comparison, submission completeness self-assessment only.",
-  "author": "MedXpert (org)",
+  "author": "赵兴华 / Steven Zhao·China（ORCID 0009-0001-0512-1237）",
   "type": "mcp-server",
   "auth": {
     "mode": "none"
