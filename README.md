@@ -1,14 +1,12 @@
 # MedXpert 器械注册助手
 ## 许可说明 · License Notice
 
-- **权利状态**：本仓库以 **MIT 许可** 许可发布，可依该许可证条款自由使用、修改与再分发。
-- **引用建议**：引用时请标注仓库名与原文链接 `https://github.com/zhaoxinghua09-cell/medical-device-reg-expert`
-  与权利人「赵兴华 / Steven Zhao·China」。
-- **品牌状态限定**：MedXpert、SynomosAI、LGD 等为相关项目标识，
-  **均未申请实体注册、未申请商标注册**；出现仅作来源标识，
-  不构成对法人实体或商标权的任何主张。
-- **完整条款**：见仓库根目录 [LICENSE](LICENSE)。
-- **联系**：zhaoxinghua06@126.com ｜ ORCID 0009-0001-0512-1237
+- **代码许可**：本仓库源代码以 **Apache-2.0** 许可发布（见根目录 [LICENSE](LICENSE)），版权归「赵兴华 / Steven Zhao·China（ORCID 0009-0001-0512-1237）」。
+- **内容权属**：本仓库不捆绑专有知识库；随附示例内容仅供演示，归其原始所有者所有。代码以 Apache-2.0 许可发布。
+- **品牌状态限定**：MedXpert、SynomosAI、LGD 等为相关项目标识，**均未申请实体注册、未申请商标注册**；出现仅作来源标识，不构成对法人实体或商标权的任何主张。
+- **免责**：本仓库内容不构成法规意见、法律意见或注册代理服务；关键数据以监管机构最新发布为准。
+- **联系**：zhaoxinghua09@gmail.com ｜ ORCID 0009-0001-0512-1237
+
 
 ---
 
@@ -43,4 +41,4 @@ Medical device registration assistant (read-only MCP). Operates as a tool agent 
 
 ## License
 
-MIT © MedXpert
+Apache-2.0 © 赵兴华 / Steven Zhao·China（代码）；本仓库不捆绑专有知识库。
